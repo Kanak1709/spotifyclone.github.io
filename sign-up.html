@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+body{
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.signup-container a img{
+    width: 10%;
+    height: 20%;
+}
+.signup-container h2{
+    color: aliceblue;
+    font-weight: 900;
+}
+.signup-container button {
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(11, 117, 11);
+    color: #fff;
+    border: none;
+    border-radius:40px ;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.5s ease;
+}
+.signup-container button:hover {
+    background-color:rgb(26, 167, 26) ;
+}
+.signup-container a{
+    display: block;
+    margin-top: 10px;
+    color: gray;
+    text-decoration: none;
+}
+.signup-container a:hover {
+    text-decoration: underline;
+}
+.signupform a{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-bottom:20px ;
+    margin-top: 20px;
+
+}
+input[type="email"] {
+    font-size: larger;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius:5px ;
+    height:30px ;
+}
+        </style>
+    </head>
+    <body>
+        <center>
+        <div class="signup-container">
+            <a href=""><img src="photos/images1.png" alt=""></a>
+            <h2>Sign Up to start listening</h2>
+            <form id="signupform" class="form">
+               <a href="">Email Address <br></a> 
+                <input type="email" id="email" placeholder="domain@gmail.com" required> <br>
+                ><button type="submit"><a href="Index.html">Sign Up</button></a>
+            </form>
+            <a href="Login.html">Already have an account? Login</a>
+        </div>
+
+        <script>
+            const signupForm=document.getElementById('signupForm');
+            signupForm.addEventListener('submit', (e)=> {
+                e.preventDefault();
+                window.location.href = 'index.html';
+            });
+        </script>
+        </center>
+    </body>
+</html>
